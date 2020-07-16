@@ -18,6 +18,7 @@
 		9F07AEDF24BF90C6004215C7 /* Category .swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F07AEDE24BF90C6004215C7 /* Category .swift */; };
 		9F07AEE124BF91F4004215C7 /* itemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F07AEE024BF91F4004215C7 /* itemModel.swift */; };
 		9F07AEE324BF9475004215C7 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F07AEE224BF9475004215C7 /* DataSource.swift */; };
+		9F07AEE524BFFB59004215C7 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F07AEE424BFFB59004215C7 /* AddItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		9F07AEDE24BF90C6004215C7 /* Category .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category .swift"; sourceTree = "<group>"; };
 		9F07AEE024BF91F4004215C7 /* itemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemModel.swift; sourceTree = "<group>"; };
 		9F07AEE224BF9475004215C7 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		9F07AEE424BFFB59004215C7 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				9F07AEB924BF8EDB004215C7 /* AppDelegate.swift */,
 				9F07AEBB24BF8EDB004215C7 /* SceneDelegate.swift */,
 				9F07AEBD24BF8EDB004215C7 /* ViewController.swift */,
+				9F07AEE424BFFB59004215C7 /* AddItemViewController.swift */,
 				9F07AEDE24BF90C6004215C7 /* Category .swift */,
 				9F07AEBF24BF8EDB004215C7 /* Main.storyboard */,
 				9F07AEC524BF8EDF004215C7 /* Assets.xcassets */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F07AEE524BFFB59004215C7 /* AddItemViewController.swift in Sources */,
 				9F07AEE324BF9475004215C7 /* DataSource.swift in Sources */,
 				9F07AEE124BF91F4004215C7 /* itemModel.swift in Sources */,
 				9F07AEDF24BF90C6004215C7 /* Category .swift in Sources */,

@@ -91,5 +91,14 @@ class ViewController: UIViewController {
         // combines we have not used that much
     }
     
+    
+}
+
+extension ViewController: AddItemViewControllerDelegate {
+    func didAddItem(item: Item) {
+        var snapshot = dataSource.snapshot()
+        snapshot.appendItems([item], toSection: item.category)
+        dataSource.apply(snapshot, animatingDifferences: true)
+    }
 }
 
