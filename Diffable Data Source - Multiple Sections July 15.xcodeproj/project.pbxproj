@@ -92,6 +92,7 @@
 				9F07AEB924BF8EDB004215C7 /* AppDelegate.swift */,
 				9F07AEBB24BF8EDB004215C7 /* SceneDelegate.swift */,
 				9F07AEBD24BF8EDB004215C7 /* ViewController.swift */,
+				9F07AEE224BF9475004215C7 /* DataSource.swift */,
 				9F07AEE424BFFB59004215C7 /* AddItemViewController.swift */,
 				9F07AEDE24BF90C6004215C7 /* Category .swift */,
 				9F07AEBF24BF8EDB004215C7 /* Main.storyboard */,
@@ -100,7 +101,6 @@
 				9F07AECA24BF8EDF004215C7 /* Info.plist */,
 				9F07AEC224BF8EDB004215C7 /* Diffable_Data_Source___Multiple_Sections_July_15.xcdatamodeld */,
 				9F07AEE024BF91F4004215C7 /* itemModel.swift */,
-				9F07AEE224BF9475004215C7 /* DataSource.swift */,
 			);
 			path = "Diffable Data Source - Multiple Sections July 15";
 			sourceTree = "<group>";

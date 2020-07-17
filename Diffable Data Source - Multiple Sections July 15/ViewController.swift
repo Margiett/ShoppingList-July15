@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         configureNavBar()
         confirgureTableView()
         confirgureDataSource()
@@ -75,11 +76,33 @@ class ViewController: UIViewController {
     }
     
    @objc private func toggleEditState(){
+    // 1. false -> 2. true -> 3. false
+    
+    // 1. !isEditing = false - > true
+    // 2. !isEditing = true -> false
+    // 3. !isEditing = false -> true
+
+/*
+     if tableView.isEditing {
+     navigationItem.leftBarbuttonItem
+     */
+
+
+
+    tableview.setEditing(!tableview.isEditing, animated: true)
+                                            // if is true is going to be done if is not is going to say edit (barbuttonItem)
+    navigationItem.leftBarButtonItem?.title = tableview.isEditing ? "Done" : "Edit"
         
     }
     @objc private func presentAddVC() {
         //TODO:
         // 1. create a AddItemViewController.swift file
+        // this is using delegation 
+        guard let addItemVC = storyboard?.instantiateViewController(withIdentifier: "AddItemViewController") as? AddItemViewController else {
+            return
+        }
+        addItemVC.delegate = self
+        present(addItemVC, animated: true)
         // 2. create a ViewController  object in storyboard
         // 3. add 2 textfields, one for the item name other for the price
         // 4. add a picker view to mange the categories
@@ -95,10 +118,12 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: AddItemViewControllerDelegate {
-    func didAddItem(item: Item) {
-        var snapshot = dataSource.snapshot()
-        snapshot.appendItems([item], toSection: item.category)
-        dataSource.apply(snapshot, animatingDifferences: true)
+    func didAddNewItem(_ addItemViewController: AddItemViewController, item: Item) {
+         var snapshot = dataSource.snapshot()
+               snapshot.appendItems([item], toSection: item.category)
+               dataSource.apply(snapshot, animatingDifferences: true)
     }
+    
+ 
 }
 
